@@ -1,0 +1,122 @@
+*
+{
+    margin:0;  
+    padding: 0;
+}
+body
+{
+   background-image: url('sakamoto-days-taro-sakamoto-rion-akao-yoichi-nagumo-hd-wallpaper-uhdpaper.com-249@5@a.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height:100vh;
+}
+header 
+{
+   backdrop-filter: blur(10px);
+   margin:20px;
+   padding: 20px;
+   border: 2px solid;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+header h1
+{
+    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header a
+{
+    position: relative;
+    margin:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a::after
+{
+    position: absolute;
+    content: "";
+    display: block;
+    height:3px;
+    width: 0;
+    background-color: #fff;
+    left:0;
+    bottom:-4px;
+    transition: width 0.3s ease;
+}
+header a:hover::after
+{
+    width: 100%;
+}
+.container
+{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(10px);
+    height:400px;
+    width: 400px;
+    margin:20px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.container h2
+{
+    text-align: center;
+    padding:20px;
+    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 20px;
+
+}
+input
+{
+   position: absolute;
+   padding:20px;
+   margin:40px;
+   width:80%;
+   border: 2px solid #fff;
+   background-color: rgba(255, 255, 255,0.3);
+   box-sizing: border-box;
+   font-size: 16px;
+   border-radius: 10px;
+}
+input::placeholder
+{
+    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:130px;
+    background: transparent;
+    color:#fff;
+    padding:20px;
+    border-radius: 20px;
+    width:80%;
+    box-sizing: border-box;
+    margin-left:40px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+button:hover
+{
+   background: #fff;
+   color:#000;
+}
