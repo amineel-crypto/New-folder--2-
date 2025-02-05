@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Dark Blue Gradient */
+    color: white;
+}
+header h1
+{
+    text-align: center;
+    padding:20px;
+    margin:20px;
+    border-radius: 20px;
+    border: 2px solid #fff1f1;
+}
+header p
+{
+    text-align: center;
+    padding:20px;
+    margin:20px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+header nav
+{
+    display: flex;
+    margin:20px;
+    justify-content: space-between;
+    border: 2px solid;
+    padding:20px;
+    border-radius: 20px;
+}
+header nav a{
+    color:#f1f1f1;
+    text-decoration: none;
+    position: relative;
+}
+header nav a::after
+{
+    content: "";
+    position: absolute;
+    height:2px;
+    width:0;
+    bottom:-4px;
+    background-color: #ffffff;
+    left:0;
+    transition: width .4s ease;
+}
+header nav a:hover::after
+{
+    width: 100%;
+} h2
+{
+    text-align: center;
+    padding:20px;
+    margin:20px;
+    border: 2px solid ;
+    border-radius: 20px; 
+}
+section p
+{
+    border-radius: 20px;
+    padding:20px;
+    text-align: center;
+    border:2px solid;
+    margin:20px;
+}
+section ul
+{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    margin:20px;
+    list-style: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+section ul li
+{
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    margin:20px;
+    border-radius: 20px;
+    border: 2px solid  ;
+}
+section ul li strong
+{
+    display: block;
+    text-align: center;
+    padding:10px;
+    text-decoration: underline;
+}
+section li img
+{
+    display: block;
+    background: #ffffff;
+    border: 2px solid ;
+    border-radius: 20px;
+    margin:20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+section li #img1
+{
+    width:200px;
+}
+
