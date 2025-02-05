@@ -107,9 +107,39 @@ section li img
     border-radius: 20px;
     margin:20px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
 }
 section li #img1
 {
     width:200px;
 }
-
+div
+{
+    display: flex;
+    padding:20px;
+    margin:20px;
+    border: 2px solid ;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+div a
+{
+    color:#fff;
+    text-decoration: none;
+    position:relative;
+}
+div a::after
+{
+    content: "";
+    position: absolute;
+    height:2px;
+    width:0;
+    bottom:-4px;
+    background-color: #ffffff;
+    left:0;
+    transition: width .4s ease;
+}
+div a:hover::after
+{
+    width:100%;
+}
